@@ -12,24 +12,24 @@
 
 // --------------------1) Create a function that takes in a number (greater than 2) and returns an array that length containing the numbers of the Fibonacci sequence.
 
-
-const fibLength1 = 6
-// Expected output: [1, 1, 2, 3, 5, 8]
-
-const fibLength2 = 10
-// Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
-
 // a) Create a test with expect statements for each of the variables provided.
 // PSEUDO
 // function should check that an array the length of the input number is returned with the correct numbers of the fibonacci sequence
 // write a test with the inputs provided
 // expect them to equal the outputs provided 
+// run test and check for "good" error (fn not defined)
 describe("fibo", () => {
   it("returns an array the length of the input number with the fibonacci sequence", () => {
     expect(fibo(fibLength1)).toEqual([1, 1, 2, 3, 5, 8])
     expect(fibo(fibLength2)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55])
   })
 })
+
+const fibLength1 = 6
+// Expected output: [1, 1, 2, 3, 5, 8]
+
+const fibLength2 = 10
+// Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
 // b) Create the function that makes the test pass.
 // PSEUDO
@@ -54,7 +54,17 @@ const fibo = (num) => {
 // --------------------2) Create a function that takes in an object and returns an array of the values sorted from least to greatest.
 // Hint: Check out this resource: Object.values() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
 
-  // a) Create a test with expect statements for each of the variables provided.
+// a) Create a test with expect statements for each of the variables provided.
+// create function called sortedValues
+// should return the sorted values of the input object
+// use the 2 inputs provided to test
+// run test and check for "good" error (fn not defined)
+describe("sortedValues", () => {
+  it("returns the values of the input arrray sorted from least to greatest", () => {
+    expect(sortedValues(studyMinutesWeek1)).toEqual([15, 15, 20, 30, 30, 60, 90])
+    expect(sortedValues(studyMinutesWeek2)).toEqual([10, 15, 20, 45, 60, 65, 100])
+  })
+})
 
 const studyMinutesWeek1 = {
   sunday: 90,
@@ -79,6 +89,24 @@ const studyMinutesWeek2 = {
 // Expected output: [10, 15, 20, 45, 60, 65, 100]
 
 // b) Create the function that makes the test pass.
+//PSEUDO
+// create a fn that takes in an obj as an argument
+// initialize an array to equal the object's values (Object.values())
+// use a sorting method to sort the array with values
+// return the array
+const sortedValues = (obj) => {
+  let vals = Object.values(obj)
+  vals.sort((a,b) => a-b)
+  return vals
+}
+
+
+
+
+
+
+
+
 
 // --------------------3) Create a function that takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.
 
