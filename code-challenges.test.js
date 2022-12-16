@@ -19,14 +19,42 @@ const fibLength1 = 6
 const fibLength2 = 10
 // Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
+// a) Create a test with expect statements for each of the variables provided.
+// PSEUDO
+// function should check that an array the length of the input number is returned with the correct numbers of the fibonacci sequence
+// write a test with the inputs provided
+// expect them to equal the outputs provided 
+describe("fibo", () => {
+  it("returns an array the length of the input number with the fibonacci sequence", () => {
+    expect(fibo(fibLength1)).toEqual([1, 1, 2, 3, 5, 8])
+    expect(fibo(fibLength2)).toEqual([1, 1, 2, 3, 5, 8, 13, 21, 34, 55])
+  })
+})
+
 // b) Create the function that makes the test pass.
+// PSEUDO
+// input - number (>2)
+// output - array (starts with 1, length of the input number, containing the numbers of the fibonacci seq)
+// the fib seq starts with 0, 1. any subsequent number is found by adding the previous 2 numbers
+//create a fxn that takes one number input
+  // initialize a return variable to an empty array
+  // iterate input number amount of times
+    // save the result of adding the last two numbers in the sequence to a variable
+    // push the result to the created array 
+  // return the result array
+const fibo = (num) => {
+  let res = [1, 1]
+  for (let i = 2; i < num; i++) {
+    let nextNum = res[i-1] + res[i-2]
+    res.push(nextNum) 
+  }
+  return res
+}
 
 // --------------------2) Create a function that takes in an object and returns an array of the values sorted from least to greatest.
 // Hint: Check out this resource: Object.values() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
 
-// a) Create a test with expect statements for each of the variables provided.
-
-// a) Create a test with expect statements for each of the variables provided.
+  // a) Create a test with expect statements for each of the variables provided.
 
 const studyMinutesWeek1 = {
   sunday: 90,
