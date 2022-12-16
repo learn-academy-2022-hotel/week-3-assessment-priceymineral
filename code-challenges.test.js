@@ -100,18 +100,20 @@ const sortedValues = (obj) => {
   return vals
 }
 
-
-
-
-
-
-
-
-
 // --------------------3) Create a function that takes in an array and returns an array of the accumulating sum. An empty array should return an empty array.
 
 // a) Create a test with expect statements for each of the variables provided.
-
+// test a fn accumulatingSum
+// it should return an array same length as input array
+// test the inputs provided to ensure your fn returns an array with the accumulated sum at each element
+// run test and check for "good" error (fn not defined)
+describe("accumulatingSum", () => {
+  it("returns an array of the same length as the input array with the accumulated sum at each element", () => {
+    expect(accumulatingSum(accountTransactions1)).toEqual([100, 83, 60, 51])
+    expect(accumulatingSum(accountTransactions2)).toEqual([250, 161, 261, 165])
+    expect(accumulatingSum(accountTransactions3)).toEqual([])
+  })
+})
 const accountTransactions1 = [100, -17, -23, -9]
 // Expected output: [100, 83, 60, 51]
 
@@ -122,3 +124,18 @@ const accountTransactions3 = []
 // Expected output: []
 
 // b) Create the function that makes the test pass.
+// create a fn that takes one array as input
+  // initialize an empty result array 
+  // initialize a var to be the current sum of the elements in the input array
+  // loop through the input array
+    // add the current element to the sum variable
+    // push the current sum to the created array
+  // return the created array
+const accumulatingSum = (arr) => {
+  let res = []
+  let sum = 0
+  for (let i = 0; i < arr.length; i++) {
+    res.push(sum+=arr[i])
+  }
+  return res
+} 
