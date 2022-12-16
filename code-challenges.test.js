@@ -12,7 +12,6 @@
 
 // --------------------1) Create a function that takes in a number (greater than 2) and returns an array that length containing the numbers of the Fibonacci sequence.
 
-// a) Create a test with expect statements for each of the variables provided.
 
 const fibLength1 = 6
 // Expected output: [1, 1, 2, 3, 5, 8]
@@ -24,6 +23,8 @@ const fibLength2 = 10
 
 // --------------------2) Create a function that takes in an object and returns an array of the values sorted from least to greatest.
 // Hint: Check out this resource: Object.values() https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Object/values
+
+// a) Create a test with expect statements for each of the variables provided.
 
 // a) Create a test with expect statements for each of the variables provided.
 
