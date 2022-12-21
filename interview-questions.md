@@ -8,39 +8,39 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 1. What is JSX? What is one syntax difference between HTML and JSX?
 
-Your answer:
+Your answer: A combination of JS and HTML used in React to facilitate component manipulation. Inline styling is done with two sets of curly braces (style={{ -styles here - }}) since JSX requires the style attribute to be equal to an object, and inside that object, another object containing the styling key-value pairs.
 
-Researched answer:
+Researched answer: JSX is an extension of JS syntax for React which makes it easier for developers to write code because it is similar to the HTML structure which a lot of developers are familiar with. 
 
 2. What is yarn? What file(s) are modified in a React application when you run the command yarn in your terminal?
 
-Your answer:
+Your answer: Yet Another Resource Negotiator (yarn) is a package manager for coding applications. It handles the background processes for installing, handling and managing dependencies.
 
-Researched answer:
+Researched answer: It is a software packaging manager designed for consistency of code performance, ease of software management via the CLI for removal, installation, updates and configuration. 
 
-3. What is a React component?
+3. What is a React component? 
 
-Your answer:
+Your answer: A single, reusable code function that returns HTML elements via JSX.
 
-Researched answer:
+Researched answer: There are 2 types, function and class components. Function components with hooks are preferred in newer versions of React. 
 
 4. What is the difference between state values and props in React?
 
-Your answer:
+Your answer: State values are properties of the component they are declared in, they can be variables or functions. These state values can be passed to child components through the use of the keyword props.
 
-Researched answer:
+Researched answer: State values can be modified only within the component where they are "born," (which causes the component to re-render); therefore, once passed as props, they are read-only to the component to which they are being passed.
 
 5. What is the DOM?
 
-Your answer:
+Your answer: Document Object Model is the link between JS code and the UI. It is the visual representation of JS code. It is structured like a tree. User inputs cause the DOM to change which in turn causes JS code to be executed. 
 
-Researched answer:
+Researched answer: The DOM consists of nodes or objects that programming languages, such as JS, can interact with. The DOM nodes or objects define the structure of the documents as well as the way documents are accessed and manipulated.
 
 6. STRETCH: Which is the difference between a div and a span?
 
-Your answer:
+Your answer: Not sure. A div is very common and is not in line, i.e. each div takes up the whole width of the document space. Not sure what a span tag is.
 
-Researched answer:
+Researched answer: a span tag is an inline container, i.e. only takes up the space necessary and does not start a new line, whereas the div tag is a block-level element, i.e. always starts a new line and takes up the whole width of the container.
 
 ## Looking Ahead: Terms for Next Week
 
